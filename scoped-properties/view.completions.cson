@@ -1,0 +1,10 @@
+'.text.html.ruby, .text.html.erb, .source.js.rails, .yaml':
+  'editor':
+    'completions' : [
+      'lt'
+      'ltm'
+      'ltblock'
+      'bt'
+      'btm'
+      'btblock'
+    ]

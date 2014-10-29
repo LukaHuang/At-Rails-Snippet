@@ -1,0 +1,7 @@
+'.source.ruby, .source.ruby.rails':
+  'editor':
+    'completions' : [
+      'rt'
+      'respond_to'
+      'respond_with'
+    ]

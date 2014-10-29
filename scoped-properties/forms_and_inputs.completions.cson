@@ -1,0 +1,13 @@
+'.source.ruby.rails, .text.html.ruby, .text.html.erb':
+  'editor':
+    'completions' : [
+      'form_for'
+      'form_tag'
+      'fl'
+      'ftf'
+      'fpf'
+      'fes'
+      'fhf'
+      'fnf'
+      'fta'
+    ]
