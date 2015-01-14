@@ -1,9 +1,18 @@
 '.source.ruby.rails, .text.html.ruby, .text.html.erb':
 
+
   'form_for':
     'prefix': 'form_for'
     'body': """
-      <%= form_for ${1} do |f| %>
+      <%= form_for @${1:post} do |f| %>
+        ${2}
+      <% end %>
+    """
+
+  'form_for2':
+    'prefix': 'form_for2'
+    'body': """
+      <%= form_for @${1:post} do |f| %>
         ${2:<%= render "shared/errors" %>}
         ${3:<%= f.text_field :${4:field_1}, class: "${5:form-control}" %>}
         ${6}

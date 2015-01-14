@@ -18,7 +18,12 @@
 
   'link_to':
     'prefix': 'lt'
-    'body': '<%= link_to "${1:text}", ${2:path}, ${4:class: "${3:btn btn-primary}"} %>'
+    'body': '<%= link_to "${1:text}", ${2:path}"} %>'
+
+  'link_to_with_button':
+      'prefix': 'ltb'
+      'body': '<%= link_to "${1:text}", ${2:path}, ${4:class: "${3:btn btn-primary}"} %>'
+
 
   'link_to_method':
     'prefix': 'ltm'
@@ -63,6 +68,12 @@
   'image_tag_class':
     'prefix': 'imagec'
     'body': '<%= image_tag $1, class: "${2:img-responsive}" %>'
+
+
+  'render':
+    'prefix': 'render'
+    'body': '<%= render "${1}" %>'
+
 
   'render (partial)':
     'prefix': 'rp'

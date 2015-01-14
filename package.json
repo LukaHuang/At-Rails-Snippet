@@ -1,5 +1,5 @@
 {
-  "name": "rails-snippets",
+  "name": "my-rails-snippets",
   "version": "1.6.0",
   "main": "./lib/rails-snippets",
   "activationEvents": [
