@@ -31,3 +31,7 @@
   'belongs_to_polymorphic':
     'prefix': 'btp'
     'body': 'belongs_to :${1:category}, polymorphic: true'
+
+  'foriegn_key':
+    'prefix': 'fk'
+    'body': 'foreign_key: \'${1:user_id}\', class_name: \'${2:User}\''

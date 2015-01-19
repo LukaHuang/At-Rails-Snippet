@@ -18,7 +18,7 @@
 
   'link_to':
     'prefix': 'lt'
-    'body': '<%= link_to "${1:text}", ${2:path}"} %>'
+    'body': '<%= link_to ${1:"text"}, ${2:path}"} %>'
 
   'link_to_with_button':
       'prefix': 'ltb'
