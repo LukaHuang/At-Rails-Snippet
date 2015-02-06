@@ -196,6 +196,21 @@
       "prefix": "html",
       "body": "<html>\n\t<head>\n\t\t<title>$1</title>\n\t</head>\n\t<body>\n\t\t$2\n\t</body>\n</html>"
     },
+    "HTML5": {
+      "prefix": "html:5",
+      "body": """
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <title>{$1:Document}</title>
+      </head>
+      <body>
+        {$2}
+      </body>
+      </html>
+      """
+    },
     "Italic": {
       "prefix": "i",
       "body": "<i>$1</i>"
