@@ -1,7 +1,15 @@
 ".text.html":
   "Anchor":
     "prefix": "a",
-    "body": "<a href=\"$1:#\">$2</a>"
+    "body": "<a href=\"$1\">$2</a>"
+
+  "Anchor link":
+    "prefix": "a:link",
+    "body": "<a href=\"http://$1\">$2</a>"
+
+  "Anchor mail":
+    "prefix": "a:mail",
+    "body": "<a href=\"mailto$1\">$2</a>"
 
   "Abbreviation":
     "prefix": "abbr",
@@ -118,6 +126,15 @@
   "Description List":
     "prefix": "dl",
     "body": "<dl>$2</dl>"
+
+  "Description List Plus":
+    "prefix": "dl+",
+    "body": """
+      <dl>
+        <dt>$1</dt>
+        <dd>$2</dd>
+      </dl>
+    """
 
   "Definition Term":
     "prefix": "dt",
@@ -252,7 +269,13 @@
 
   "Link":
     "prefix": "link",
-    "body": "<link rel=\"$1:stylesheet\" href=\"$2:/css/master.css\" media=\"$3:screen\" title=\"$4:no title\" charset=\"$5:utf-8\">"
+    "body": "<link>$1</link>"
+
+  "Link CSS":
+    "prefix": "link:css",
+    "body": """
+      <link rel="stylesheet" type="text/css" href="${1:style.css}" media="${2:all}">"
+    """
 
   "Main":
     "prefix": "main",
@@ -284,7 +307,13 @@
 
   "Meta":
     "prefix": "meta",
-    "body": "<meta name=\"$1:name\" content=\"$2:content\">"
+    "body": "<meta>$1</meta>"
+
+  "Meta UTF8":
+    "prefix": "meta:utf",
+    "body": """
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    """
 
   "Navigation":
     "prefix": "nav",
@@ -356,12 +385,14 @@
 
   "Script":
     "prefix": "script",
-    "body": "<script charset=\"utf-8\">\n\t$1\n</script>"
-
+    "body": """
+      <script type="text/javascript">$1</script>
+    """
   "Script With External Source":
-    "prefix": "scriptsrc",
-    "body": "<script src=\"$1\" charset=\"$2:utf-8\"></script>"
-
+    "prefix": "script:src",
+    "body": """
+      <script type="text/javascript" src="$1">$2</script>
+    """
   "Section":
     "prefix": "section",
     "body": "<section>$1</section>"
@@ -414,6 +445,16 @@
     "prefix": "td",
     "body": "<td>$1</td>"
 
+  "Table plus":
+    "prefix": "table+",
+    "body": """
+      <table>
+        <tr>
+          <td>$1</td>
+        </tr>
+      </table>
+    """
+
   "Template":
     "prefix": "template",
     "body": "<template>$2</template>"
@@ -453,6 +494,14 @@
   "Unordered List":
     "prefix": "ul",
     "body": "<ul>$1</ul>"
+
+  "Unordered List Plus":
+    "prefix": "ul+",
+    "body": """
+      <ul>
+        <li>$1</li>
+      </ul>
+    """
 
   "Variable":
     "prefix": "var",
