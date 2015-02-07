@@ -9,7 +9,7 @@
 
   "Address":
     "prefix": "address",
-    "body": "<address $1:id=\"$2\">\n\t$3\n</address>"
+    "body": "<address>$3</address>"
 
   "Area":
     "prefix": "area",
@@ -17,15 +17,15 @@
 
   "Article":
     "prefix": "article",
-    "body": "<article id=\"$1\">\n\t$2\n</article>"
+    "body": "<article>$2</article>"
 
   "Aside":
     "prefix": "aside",
-    "body": "<aside id=\"$1\">\n\t$2\n</aside>"
+    "body": "<aside>$2</aside>"
 
   "Audio":
     "prefix": "audio",
-    "body": "<audio src=\"$1\">\n\t$2\n</audio>"
+    "body": "<audio src=\"$1\">$2</audio>"
 
   "Bold":
     "prefix": "b",
@@ -45,7 +45,7 @@
 
   "Blockquote":
     "prefix": "blockquote",
-    "body": "<blockquote cite=\"$1:http://\">\n\t$2\n</blockquote>"
+    "body": "<blockquote cite=\"$1:http://\">$2</blockquote>"
 
   "Line Breaker":
     "prefix": "br",
@@ -97,7 +97,7 @@
 
   "Data List":
     "prefix": "datalist",
-    "body": "<datalist id=\"$1\">\n\t$2\n</datalist>"
+    "body": "<datalist>$2</datalist>"
 
   "Description":
     "prefix": "dd",
@@ -117,7 +117,7 @@
 
   "Description List":
     "prefix": "dl",
-    "body": "<dl id=\"$1\">\n\t$2\n</dl>"
+    "body": "<dl>$2</dl>"
 
   "Definition Term":
     "prefix": "dt",
@@ -125,7 +125,7 @@
 
   "Div":
     "prefix": "div",
-    "body": "<div$1: id=\"$2:name\">\n\t$3\n</div>"
+    "body": "<div>$1</div>"
 
   "Emphasis":
     "prefix": "em",
@@ -181,11 +181,11 @@
 
   "Head":
     "prefix": "head",
-    "body": "<head>\n\t$1\n</head>"
+    "body": "<head>$1</head>"
 
   "Header":
     "prefix": "header",
-    "body": "<header>\n\t$1\n</header>"
+    "body": "<header>$1</header>"
 
   "Horizontal Rule":
     "prefix": "hr",
@@ -193,7 +193,7 @@
 
   "HTML":
     "prefix": "html",
-    "body": "<html>\n\t<head>\n\t\t<title>$1</title>\n\t</head>\n\t<body>\n\t\t$2\n\t</body>\n</html>"
+    "body": "<html>$1</html>"
 
   "HTML5":
     "prefix": "html:5",
@@ -300,7 +300,7 @@
 
   "Ordered List":
     "prefix": "ol",
-    "body": "<ol>\n\t$1\n</ol>"
+    "body": "<ol>$1</ol>"
 
   "Option Group":
     "prefix": "optgroup",
@@ -364,11 +364,11 @@
 
   "Section":
     "prefix": "section",
-    "body": "<section>\n\t$1\n</section>"
+    "body": "<section>$1</section>"
 
   "Select":
     "prefix": "select",
-    "body": "<select id=\"$1\" name=\"$2\">\n\t$3\n</select>"
+    "body": "<select name=\"$2\">$3</select>"
 
   "Small":
     "prefix": "small",
@@ -416,7 +416,7 @@
 
   "Template":
     "prefix": "template",
-    "body": "<template id=\"$1\">\n\t$2\n</template>"
+    "body": "<template>$2</template>"
 
   "Text Area":
     "prefix": "textarea",
@@ -424,7 +424,7 @@
 
   "Table Foot":
     "prefix": "tfoot",
-    "body": "<tfoot>\n\t$1\n</tfoot>"
+    "body": "<tfoot>$1</tfoot>"
 
   "Table Header Cell":
     "prefix": "th",
@@ -432,7 +432,7 @@
 
   "Table Head":
     "prefix": "thead",
-    "body": "<thead>\n\t$1\n</thead>"
+    "body": "<thead>$1</thead>"
 
   "Time":
     "prefix": "time",
@@ -452,7 +452,7 @@
 
   "Unordered List":
     "prefix": "ul",
-    "body": "<ul>\n\t$1\n</ul>"
+    "body": "<ul>$1</ul>"
 
   "Variable":
     "prefix": "var",
@@ -470,7 +470,7 @@
 ".text.html:not(.meta.tag)":
   "Body":
     "prefix": "body",
-    "body": "<body>\n\t$1\n</body>"
+    "body": "<body>$1</body>"
 
 
 ".text.html:not(.text.blog)":
