@@ -175,17 +175,17 @@
   "Form":
     prefix: "form",
     body: """
-    <form action="$1">$2</form>
+    <form action="$1">\n\t$2\n</form>
     """
   "Form:get":
     prefix: "form:get",
     body: """
-    <form action="$1" method="get">$2</form>
+    <form action="$1" method="get">\n\t$2\n</form>
     """
   "Form:post":
     prefix: "form:post",
     body: """
-    <form action="$1" method="post">$2</form>
+    <form action="$1" method="post">\n\t$2\n</form>
     """
 
 
@@ -611,6 +611,10 @@
   "Select":
     prefix: "select",
     body: "<select name=\"$2\">$3</select>"
+
+  "Option":
+    prefix: "option"
+    body: "<option>$1</option>"
 
   "Small":
     prefix: "small",

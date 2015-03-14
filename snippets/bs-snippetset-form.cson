@@ -1,0 +1,56 @@
+".text.html":
+
+  "Boostrap Input":
+    "prefix":"inputbs"
+    "body":"""
+      <input type='$1' class='${2:form-control} input-${3:lg}}' placeholder='$4' ${5:disabled}>
+      $6
+    """
+
+  "Boostrap Textarea":
+    "prefix":"textareabs"
+    "body":"""
+      <textarea class='form-control' placeholder='$1' ${2:disabled}>$3</textarea>
+      $4
+    """
+
+  "Bootstrap Checkbox":
+    "prefix":"checkboxbs"
+    "body":"""
+      <div class='checkbox${1:-inline}'>
+        <label>
+          <input type='checkbox' name='$2' value='$3' ${4:checked } ${5:disabled}>
+          $6
+        </label>
+      </div>
+    """
+
+  "Bootstrap Radio":
+    "prefix":"radiobs"
+    "body":"""
+      <div class='radio${1:-inline}'>
+        <label>
+          <input type='radio' name='$2' value='$3' ${4:checked} ${5:disabled}>
+          $6
+        </label>
+      </div>
+      $7
+    """
+
+  "Bootstrap Select":
+    "prefix":"selectbs"
+    "body":"""
+      <select class='form-control' ${1: disabled}>
+        <option>$2</option>
+      </select>
+      $3
+    """
+
+  "Bootstrap Fieldset":
+    "prefix":"fieldsetbs"
+    "body":"""
+      <fieldset class='$1' ${2: disabled}>
+        $3
+      </fieldset>
+      $4
+    """
