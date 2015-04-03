@@ -227,7 +227,7 @@
 
   "Horizontal Rule":
     prefix: "hr",
-    body: "<hr/>"
+    body: "<hr>"
 
   "HTML":
     prefix: "html",

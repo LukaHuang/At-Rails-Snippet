@@ -1,12 +1,24 @@
 '.text.html.ruby, .text.html.erb, .source.js.rails, .yaml':
   'erb_render_block':
     'prefix': '='
-    'body': '<%= $1 %>'
-
+    'body': """
+    <%= $1 %>
+    """
+  'erb_render_block_1':
+    'prefix': '>='
+    'body': """
+    ><%= $1 %>
+    """
 '.text.html.ruby, .text.html.erb':
   'erb_exec_block':
     'prefix': '-'
     'body': '<% $1 %>'
+
+  'erb_exec_block_1':
+    'prefix': '>-'
+    'body': """
+    ><% $1 %>
+    """
 
   'erb_loop_block':
     'prefix': '=loop'
@@ -18,16 +30,22 @@
 
   'link_to':
     'prefix': 'lt'
-    'body': '<%= link_to ${1:"text"}, ${2:path}"} %>'
+    'body': """
+      <%= link_to "${1:text}", ${2:path} %>
+    """
 
   'link_to_with_button':
       'prefix': 'ltb'
-      'body': '<%= link_to "${1:text}", ${2:path}, ${4:class: "${3:btn btn-primary}"} %>'
+      'body': """
+        <%= link_to "${1:text}", ${2:path}, class: "${3:btn btn-primary}" %>
+      """
 
 
   'link_to_method':
     'prefix': 'ltm'
-    'body': '<%= link_to "${1:text}", ${2:path}, method: :${3:post} %>'
+    'body': """
+      <%= link_to "${1:text}", ${2:path}, method: :${3:post} %>
+    """
 
   'link_to_block':
     'prefix': 'ltblock'
@@ -39,7 +57,7 @@
 
   'button_to':
     'prefix': 'bt'
-    'body': '<%= button_to "${1:text}", ${2:path}, ${4:class: "${3:btn btn-primary}"} %>'
+    'body': '<%= button_to "${1:text}", ${2:path}, class: "${3:btn btn-primary}" %>'
 
   'button_to_method':
     'prefix': 'btm'
@@ -171,12 +189,12 @@
 
   'font_awesome_icon':
     'prefix': 'fa'
-    'body': '<%= fa_icon("${1:search}"${2:, text: "${3:Buscar}"}) %>'
+    'body': '<%= fa_icon("${1:search}, text: "${3:Buscar}) %>'
 
 '.embedded.erb, .embedded.ruby, .embedded.rails':
   'embedded_font_awesome_icon':
     'prefix': 'fa'
-    'body': 'fa_icon("${1:search}"${2:, text: "${3:Buscar}"})'
+    'body': 'fa_icon("${1:search} , text: "${3:Buscar})'
 
   'embeded loop':
     'prefix': ' do' #(space)do here to beat https://github.com/atom/language-ruby/blob/master/snippets/language-ruby.cson#L142

@@ -3,7 +3,7 @@
   "Boostrap Input":
     "prefix":"inputbs"
     "body":"""
-      <input type='$1' class='${2:form-control} input-${3:lg}}' placeholder='$4' ${5:disabled}>
+      <input type='${1:text}' class='${2:form-control} input-${3:lg|sm}}' placeholder='$4' ${5:disabled}>
       $6
     """
 
