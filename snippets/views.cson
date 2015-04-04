@@ -34,24 +34,24 @@
       <%= link_to "${1:text}", ${2:path} %>
     """
 
-  'link_to_with_button':
-      'prefix': 'ltb'
-      'body': """
-        <%= link_to "${1:text}", ${2:path}, class: "btn btn-${3:primary}" %>
-      """
-
-
-  'link_to_method':
-    'prefix': 'ltm'
+  'class-btn'
+    'prefix': 'cb'
     'body': """
-      <%= link_to "${1:text}", ${2:path}, method: :${3:post} %>
+      class: "btn btn-${4:primary}"
     """
 
-  'link_to_method':
-    'prefix': 'ltmb'
+  'method-post'
+    'prefix': 'mp'
     'body': """
-      <%= link_to "${1:text}", ${2:path}, method: :${3:post} , class: "btn btn-${4:primary}"%>
+      class:  method: :${1:post}
     """
+
+  'method-delete'
+    'prefix': 'md'
+    'body': """
+      class:  method: :${1:delete}, data: { confirm: "${2:Are you sure?}" }
+    """
+
 
   'link_to_block':
     'prefix': 'ltblock'
