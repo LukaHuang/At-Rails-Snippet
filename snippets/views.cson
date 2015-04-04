@@ -37,7 +37,7 @@
   'link_to_with_button':
       'prefix': 'ltb'
       'body': """
-        <%= link_to "${1:text}", ${2:path}, class: "${3:btn btn-primary}" %>
+        <%= link_to "${1:text}", ${2:path}, class: "btn btn-${3:primary}" %>
       """
 
 
@@ -45,6 +45,12 @@
     'prefix': 'ltm'
     'body': """
       <%= link_to "${1:text}", ${2:path}, method: :${3:post} %>
+    """
+
+  'link_to_method':
+    'prefix': 'ltmb'
+    'body': """
+      <%= link_to "${1:text}", ${2:path}, method: :${3:post} , class: "btn btn-${4:primary}"%>
     """
 
   'link_to_block':
@@ -156,9 +162,7 @@
   'if statement':
     'prefix': 'if'
     'body': """
-      <% if ${1:true} %>
-        ${2:<!-- true -->}
-      <% end %>
+      <% if ${1} %>
     """
 
   'if else statement':

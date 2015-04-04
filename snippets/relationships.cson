@@ -14,7 +14,7 @@
 
   'has_many_through':
     'prefix': 'hmt'
-    'body': 'has_many :${1:categories}, through: ${2:categorizations}$3'
+    'body': 'has_many :${1:my_categories}, through: :${2:categorizations} ,source: :${3:category}'
 
   'has_and_belongs_to_many':
     'prefix': 'habtm'
@@ -34,4 +34,4 @@
 
   'foriegn_key':
     'prefix': 'fk'
-    'body': 'foreign_key: \'${1:user_id}\', class_name: \'${2:User}\''
+    'body': 'class_name: \'${1:User}\', foreign_key: \'${2:user_id}\''
