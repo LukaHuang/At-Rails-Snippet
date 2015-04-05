@@ -34,24 +34,23 @@
       <%= link_to "${1:text}", ${2:path} %>
     """
 
-  'class-btn'
+  'class-btn':
     'prefix': 'cb'
     'body': """
       class: "btn btn-${4:primary}"
     """
 
-  'method-post'
+  'method-post':
     'prefix': 'mp'
     'body': """
-      class:  method: :${1:post}
+      method: :${1:post}
     """
 
-  'method-delete'
+  'method-delete':
     'prefix': 'md'
     'body': """
-      class:  method: :${1:delete}, data: { confirm: "${2:Are you sure?}" }
+      method: :${1:delete}, data: { confirm: "${2:Are you sure?}" }
     """
-
 
   'link_to_block':
     'prefix': 'ltblock'

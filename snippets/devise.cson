@@ -2,7 +2,7 @@
 
   'authenicate_user':
     'prefix': 'au'
-    'body': 'authenicate_user!'
+    'body': 'authenticate_user!'
 
   'current_user':
     'prefix': 'cu'
