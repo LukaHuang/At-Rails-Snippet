@@ -199,8 +199,16 @@
     "prefix": "div#",
     "body": "<div id=\"$1\">\n\t$2\n</div>"
   ,
+  "Div# 2":
+    "prefix": "#",
+    "body": "<div id=\"$1\">\n\t$2\n</div>"
+  ,
   "Div,":
     "prefix": "div.",
+    "body": "<div class=\"$1\">\n\t$2\n</div>"
+  ,
+  "Div,2":
+    "prefix": ".",
     "body": "<div class=\"$1\">\n\t$2\n</div>"
   ,
   "Emphasis#":

@@ -9,6 +9,12 @@
     'body': """
     ><%= $1 %>
     """
+  'erb_render_block_2':
+    'prefix': 'pe'
+    'body': """
+    <%= $1 %>
+    """
+    
 '.text.html.ruby, .text.html.erb':
   'erb_exec_block':
     'prefix': '-'
