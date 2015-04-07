@@ -48,3 +48,28 @@
   'render_partial':
     'prefix': 'rp'
     'body': 'render "${1:action}"'
+
+  '七神器':
+    'prefix': '7weapons'
+    'body':"""
+      def $1index
+      end
+
+      def show
+      end
+
+      def new
+      end
+
+      def create
+      end
+
+      def edit
+      end
+
+      def update
+      end
+
+      def destroy
+      end
+    """
