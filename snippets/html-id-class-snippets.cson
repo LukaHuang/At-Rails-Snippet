@@ -195,21 +195,13 @@
     "prefix": "dt.",
     "body": "<dt class=\"$1\">$2</dt>"
   ,
-  "Div#":
-    "prefix": "div#",
-    "body": "<div id=\"$1\">\n\t$2\n</div>"
-  ,
-  "Div# 2":
+  "Div id":
     "prefix": "#",
-    "body": "<div id=\"$1\">\n\t$2\n</div>"
+    "body": "<div id=\"$1\">$2</div>"
   ,
-  "Div,":
-    "prefix": "div.",
-    "body": "<div class=\"$1\">\n\t$2\n</div>"
-  ,
-  "Div,2":
+  "Div class":
     "prefix": ".",
-    "body": "<div class=\"$1\">\n\t$2\n</div>"
+    "body": "<div class=\"$1\">$2</div>"
   ,
   "Emphasis#":
     "prefix": "em#",

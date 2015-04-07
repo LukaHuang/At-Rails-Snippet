@@ -49,8 +49,8 @@
     'prefix': 'rp'
     'body': 'render "${1:action}"'
 
-  '七神器':
-    'prefix': '7weapons'
+  '7 weapons':
+    'prefix': '7w'
     'body':"""
       def $1index
       end

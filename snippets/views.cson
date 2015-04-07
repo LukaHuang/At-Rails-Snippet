@@ -14,7 +14,7 @@
     'body': """
     <%= $1 %>
     """
-    
+
 '.text.html.ruby, .text.html.erb':
   'erb_exec_block':
     'prefix': '-'
@@ -45,6 +45,13 @@
     'body': """
       class: "btn btn-${4:primary}"
     """
+
+  'class':
+    'prefix': 'cl'
+    'body': """
+      class: "$4"
+    """
+
 
   'method-post':
     'prefix': 'mp'
