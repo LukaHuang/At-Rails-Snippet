@@ -197,11 +197,20 @@
   ,
   "Div id":
     "prefix": "#",
-    "body": "<div id=\"$1\">$2</div>"
+    "body": "<div id=\"$1\"></div>"
   ,
+  "Div id 2":
+    "prefix": "#",
+    "body": "<div id=\"$1\">\n\t$2\n</div>"
+  ,
+
   "Div class":
     "prefix": ".",
-    "body": "<div class=\"$1\">$2</div>"
+    "body": "<div class=\"$1\"></div>"
+  ,
+  "Div class 2":
+    "prefix": "div.",
+    "body": "<div class=\"$1\">\n\t$2\n</div>"
   ,
   "Emphasis#":
     "prefix": "em#",

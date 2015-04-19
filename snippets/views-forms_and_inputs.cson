@@ -1,4 +1,4 @@
-'.source.ruby.rails, .text.html.ruby, .text.html.erb':
+'.text.html, .source.ruby.rails, .text.html.ruby, .text.html.erb':
 
 
   'form_for':

@@ -1,8 +1,8 @@
 '.source.ruby, .source.ruby.rails':
 
   'generic_validation':
-    'prefix': 'vs'
-    'body': 'validates :${1:field_1}, ${2:presence}: true'
+    'prefix': 'vp'
+    'body': 'validates :${1:field}, ${2:presence}: true'
 
   'custom_validation':
     'prefix': 've'

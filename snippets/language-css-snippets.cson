@@ -324,3 +324,19 @@
   '!important':
     'prefix': '!'
     'body': '!important$0'
+
+  '@font-face':
+    'prefix': '@f'
+    'body': '@font-face { font-family: "$1"; src: url($2); }$0'
+
+  '@import':
+    'prefix': '@i'
+    'body': '@import url($1);$0'
+
+  '@media max width':
+    'prefix': '@m'
+    'body': """
+      @media (${1:max}-width: ${2:768}px){
+        $3
+      }
+    """
